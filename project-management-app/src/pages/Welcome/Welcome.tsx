@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { routerPaths } from '../../constants/common-constants';
 import { useSelector } from 'react-redux';
 import { TStore } from '../../store/index';
+import ConfirmationModal from '../../components/ConfirmationModal/ConfirmationModal';
 
 const StyledAbout = styled.div`
   max-width: 30%;
@@ -41,6 +42,7 @@ function Welcome() {
             <Button>Go to Main page</Button>
           </Link>
         )}
+        <ConfirmationModal></ConfirmationModal>
       </Navbar>
       <StyledWrapper>
         <StyledAbout>
